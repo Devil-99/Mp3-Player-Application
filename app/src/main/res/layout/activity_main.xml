@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/musicstudio" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="480dp"
+        android:background="@drawable/play" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="460dp"
+        android:background="@drawable/pause" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="460dp"
+        android:background="@drawable/stop" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="20dp"
+        android:text="Exit"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic"
+        android:background="@drawable/exit_button"
+        />
+
+    <TextView
+        android:id="@+id/marquee"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="10dp"
+        android:scrollHorizontally="true"
+        android:text="Alec Benjamin - Let Me Down Slowly.mp3"
+        android:singleLine="true"
+        android:textColor="#E80A0DA1"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/xyz"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#D89148BE"
+        android:textSize="30dp"
+        android:textStyle="italic" />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="590dp"
+        android:id="@+id/seekbar"/>
+</RelativeLayout>
